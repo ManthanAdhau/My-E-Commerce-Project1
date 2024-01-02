@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+:root{
+  background-color: #fff;
+  color: #000;
+}
 h1 {
   font-size: 50px;
   line-height: 64px;
@@ -34,6 +38,7 @@ p {
 .section-m1 {
   margin: 40px 0;
 }
+
 button.normal {
   font-size: 14px;
   font-weight: 600;
@@ -57,9 +62,27 @@ button.white {
   outline: none;
   transition: 0.2s;
 }
+.toggle-btn{
+  background:   #e3e6f3;
+
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+
+  
+  cursor: pointer;
+}
+.toggle-btn img{
+  width: 50px;
+  margin-left: 10px;
+}
+
 body {
   width: 100%;
+  
 }
+
+
 #header {
   display: flex;
   align-items: center;
@@ -83,6 +106,7 @@ body {
   padding: 0 20px;
   position: relative;
 }
+
 #navbar li a {
   text-decoration: none;
   font-size: 16px;
@@ -108,6 +132,11 @@ body {
   display: none;
   align-items: center;
 }
+#price{
+  font-size: 20px;
+  color: #222;
+}
+
 #close {
   display: none;
 }
@@ -670,6 +699,13 @@ footer .copyright {
   width: 100%;
   height: 100%;
 }
+#form-details{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+  padding: 80px;
+  border: 1px solid #e1e1e1;
+}
 #form-details form {
   width: 65%;
   display: flex;
@@ -691,7 +727,67 @@ footer .copyright {
 #cart table {
   overflow-x: auto;
 }
+#signin-form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 500px 0 500px;
+  padding: 40px;
+  border: 1px solid #e1e1e1;
+  border-radius: 50px;
+  
+}
 
+#signin-form form{
+  display: flex;
+ flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#signin-form input
+{
+  display: flex;
+  
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+  text-align: start;
+  
+  
+  
+ 
+
+  
+}
+#signin-form label{
+
+padding-bottom: 15px;
+
+}
+#signin-form button{
+  width: auto;
+  padding: 10 20px;
+  cursor: pointer;
+  margin: 20px auto 20px;
+  background-color: #088178;
+
+}
+#signin-form img{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+#signin-form h5{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  text-decoration: none;
+}
 #cart table {
   width: 100%;
   border-collapse: collapse;
@@ -783,7 +879,10 @@ footer .copyright {
   padding: 10px;
   font-size: 13px;
 }
-
+.dark-theme {
+  background-color: #000;
+  color: #fff;
+}
 @media (max-width: 799px) {
   
   #navbar {
@@ -816,6 +915,7 @@ footer .copyright {
     font-size: 24px;
     padding-left: 20px;
   }
+ 
   #close {
     display: initial;
     position: absolute;
