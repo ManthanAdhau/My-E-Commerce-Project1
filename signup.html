@@ -37,23 +37,32 @@
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
- <section id="signin-form">
-   
-    <form action="">
-        <h2>Create Account</h2>
-        <label for="">Your name</label>
-        <input type="text" placeholder="First and last name" autocomplete="off" required>
-        <label for="">Mobile no.</label>
-        <input type="text" autocomplete="off" placeholder="Mobile no" required>
-        <label for="">Email</label>
-        <input type="email" autocomplete="off" required>
-        <label for="">Password</label>
-        <input type="password"  placeholder="at least 6 characters" autocomplete="off" required>
-       
+ 
+   <div class="container-form">
+    <form class="form" id="signupForm">
+        <h2>Sign Up</h2>
+        <label for="Fullname">Your name:</label>
+        <input type="text" id="signupfullname" name="signupFullname" required placeholder="First and last name">
+
+        <label for="Mobileno">Your name:</label>
+        <input type="text" id="mobilneNo" name="mobileno" required placeholder="Mobile number">
+
+        <label for="Email">Your name:</label>
+        <input type="text" id="email" name="Email" required >
+
+        <label for="signupUsername">Username:</label>
+        <input type="text" id="signupUsername" name="signupUsername" required>
+
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" name="signupPassword" required>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <button type="submit">Sign Up</button>
     </form>
-    <button class="normal"><a href="index.html"></a>Sign up</button>  
-    
- </section>
+</div>
+ 
     <footer class="section-p1">
         <div class="col">
             <img class="logo" src="logo.png" alt="logo">
